@@ -1,2 +1,2 @@
 # createnote
-This Note book created by Pure JS, no framework used.
+You can use this or modify
