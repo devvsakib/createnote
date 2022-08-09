@@ -8,24 +8,23 @@
     <title>Project:02</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
         <a class="navbar-brand" href="#">Note</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Drop Note</a>
+                <li>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input id="txtSearch" class="form-control mr-sm-2" type="search" placeholder="Search Note" aria-label="Search"><br>
+                        <button id="srcTXT" class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+                    </form>
                 </li>
             </ul>
         </div>
@@ -33,7 +32,7 @@
     <div class="container py-5 mx-auto">
         <!-- Note input section began -->
         <div class="noteDiv">
-            <div class="card-body">
+            <div class="card-body card-pd">
                 <h5 class="card-title" >Write Your Note</h5>
                 <p class="card-text">
                     <textarea class="mt-2 form-control" class="addNote" id="addNote" rows="3" placeholder="Write Your Notes Here..."></textarea>
@@ -42,9 +41,8 @@
             </div>
         </div>
         <hr>
-        <h4>Search Your Note here</h4>
-        <form class="form-inline my-2 my-lg-0 pb-3">
-            <input id="txtSearch" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"><br>
+        <form class="form-inline res-form my-2 my-lg-0">
+            <input id="txtSearch" class="form-control mr-sm-2" type="search" placeholder="Search Note" aria-label="Search"><br>
             <button id="srcTXT" class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
         </form>
         <h3 id="insertName">Your Note List</h3>
@@ -56,7 +54,7 @@
     <div class="container-fluid badge-success">
         <div class="row">
             <div class="col text-center py-2">
-                @created by <a href="https://dvlprsakib.xyz" style="text-decoration: none; font-weight: bold; color: black" target="new">Developer Sakib</a> | Can be Modify or Use
+                @created by <a href="https://dvlprsakib.rf.gd/" style="text-decoration: none; font-weight: bold; color: black" target="new">DevvSakib</a> | Can be Modify or Use
             </div>
         </div>
     </div>

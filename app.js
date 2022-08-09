@@ -26,11 +26,11 @@ function funcy() {
     let html = '';
     allnote.forEach(function (e, index) {
         html += `
-        <div class="card my-2 mx-3" style="">
+        <div class="card my-2 col-sm-2 mx-3" style="">
         <div class="card-body">
         <h5 class="card-title">Note ${index + 1}</h5>
         <p class="card-text">${e}</p>
-        <button id="${index}" onclick="deleteNote(this.id)" class="btn btn-primary">Delete</button>
+        <button id="${index}" onclick="deleteNote(this.id)" class="btn btn-outline-danger">Delete</button>
         </div>
         </div>
         `

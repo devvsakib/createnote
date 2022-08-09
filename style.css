@@ -1,3 +1,16 @@
-body{
-    color: white;
+.card-pd{
+    padding: 0;
+}
+.navbar-nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.res-form{
+    visibility: hidden;
+}
+@media (max-width: 991px) {
+    .res-form{
+        visibility: visible;
+    }
 }
